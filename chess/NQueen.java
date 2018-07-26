@@ -9,7 +9,7 @@ public class NQueen {
 
 	private void nQueenHelper(int n, List<List<Integer>> queenCols, ArrayList<Integer> currSol) {
 		if(currSol.size() >= n) {
-			ArrayList<Integer> sol = (ArrayList<Integer>) currSol.clone();			
+			ArrayList<Integer> sol = ((ArrayList<Integer>) currSol.clone());			
 			queenCols.add(sol);
 			return;
 		}
